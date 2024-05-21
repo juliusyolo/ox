@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.juliusyolo</groupId>
+        <artifactId>ox-auth</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <artifactId>ox-auth-service</artifactId>
+    <name>ox-auth-service</name>
+    <version>${ox.auth.service.version}</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.juliusyolo</groupId>
+            <artifactId>ox-auth-dao</artifactId>
+        </dependency>
+    </dependencies>
+</project>

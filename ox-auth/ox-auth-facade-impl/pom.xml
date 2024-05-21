@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.juliusyolo</groupId>
+        <artifactId>ox-auth</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <artifactId>ox-auth-facade-impl</artifactId>
+    <name>ox-auth-facade-impl</name>
+    <version>${ox.auth.facade.version}</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.juliusyolo</groupId>
+            <artifactId>ox-auth-facade</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.juliusyolo</groupId>
+            <artifactId>ox-auth-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

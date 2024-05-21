@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.juliusyolo</groupId>
+        <artifactId>ox</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>ox-user</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>ox-user-dao</module>
+        <module>ox-user-service</module>
+        <module>ox-user-facade</module>
+        <module>ox-user-facade-impl</module>
+    </modules>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-user-dao</artifactId>
+                <version>${ox.user.dao.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-user-service</artifactId>
+                <version>${ox.user.service.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-user-facade</artifactId>
+                <version>${ox.user.facade.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-user-facade-impl</artifactId>
+                <version>${ox.user.facade.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-common</artifactId>
+                <version>${ox.common.verison}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

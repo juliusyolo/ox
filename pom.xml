@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.juliusyolo</groupId>
+    <artifactId>ox</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+    <name>ox</name>
+    <description>ox</description>
+
+    <modules>
+        <module>ox-user</module>
+        <module>ox-common</module>
+        <module>ox-app</module>
+        <module>ox-auth</module>
+    </modules>
+
+    <properties>
+        <java.version>21</java.version>
+        <revision>${ox.module.version}</revision>
+        <ox.module.version>0.0.1</ox.module.version>
+        <ox.common.verison>0.0.2</ox.common.verison>
+        <ox.app.version>0.0.1</ox.app.version>
+        <ox.user.dao.version>0.0.1</ox.user.dao.version>
+        <ox.user.facade.version>0.0.1</ox.user.facade.version>
+        <ox.user.service.version>0.0.1</ox.user.service.version>
+        <ox.auth.dao.version>0.0.1</ox.auth.dao.version>
+        <ox.auth.facade.version>0.0.1</ox.auth.facade.version>
+        <ox.auth.service.version>0.0.1</ox.auth.service.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-common</artifactId>
+                <version>${ox.common.verison}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-user-facade-impl</artifactId>
+                <version>${ox.user.service.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-auth-facade-impl</artifactId>
+                <version>${ox.auth.facade.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>
