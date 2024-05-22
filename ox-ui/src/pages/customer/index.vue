@@ -3,15 +3,13 @@ import {defineComponent} from 'vue'
 import PageLayout from '../../layout/page-layout.vue'
 
 export default defineComponent({
-  name: "index.vue",
+  name: "Customer",
   components: {PageLayout}
 })
 </script>
 
 <template>
-<page-layout>
-
-</page-layout>
+<page-layout/>
 </template>
 
 <style scoped>

@@ -1,8 +1,23 @@
 <script setup lang="ts">
+
+import {computed} from "vue";
+
+const themeConfig = computed(() => {
+  return {
+    "token": {
+      "colorPrimary": "#f06042",
+      "colorInfo": "#f06042"
+    }
+  };
+});
+
 </script>
 
 <template>
- <router-view/>
+  <a-config-provider :theme="themeConfig">
+    <router-view/>
+  </a-config-provider>
+
 </template>
 
 <style scoped>
