@@ -1,36 +1,31 @@
 package com.juliusyolo.ox.user.repository.model;
 
-import java.time.LocalDateTime;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 
+import java.time.LocalDateTime;
+
 /**
+ * @author Julius Wang
  * <p>
- * User 用户实体类
- * </p>
- *
- * @author gesi.julius
- * @version : User v0.1
+ * 角色实体
+ * <p>
+ * @since v0.1
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class Role {
     @Id
     private Long id;
 
-    private String nickname;
+    private String roleId;
 
-    private String username;
+    private String roleCode;
 
-    private String password;
-
-    private String email;
-
-    private String phoneNumber;
+    private String roleDesc;
 
     private LocalDateTime createTime;
 

@@ -18,7 +18,12 @@ import org.mapstruct.factory.Mappers;
 public interface UserConverter {
 
     UserConverter INSTANCE = Mappers.getMapper(UserConverter.class);
-    @Mapping(target = "nickName", source = "nickName")
-    @Mapping(target = "userName", source = "userName")
+
+    @Mapping(target = "nickname", source = "nickname")
+    @Mapping(target = "username", source = "username")
     UserModel convert(User user);
+
+    @Mapping(target = "nickname", source = "nickname")
+    @Mapping(target = "username", source = "username")
+    User convert(UserModel userModel);
 }

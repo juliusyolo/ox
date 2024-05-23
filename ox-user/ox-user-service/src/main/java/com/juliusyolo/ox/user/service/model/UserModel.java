@@ -22,9 +22,9 @@ public class UserModel {
 
     private Long id;
 
-    private String nickName;
+    private String nickname;
 
-    private String userName;
+    private String username;
 
     private String password;
 

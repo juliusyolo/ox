@@ -7,22 +7,22 @@ import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Mono;
 
 /**
+ * @author Julius Wang
  * <p>
- * UserRepository description
- * </p>
- *
- * @author gesi.julius
- * @version : UserRepository v0.1
+ * 用户数据访问层
+ * <p>
+ * @since v0.1
  */
 @Repository
-public interface UserRepository extends ReactiveCrudRepository<User,Long> {
+public interface UserRepository extends ReactiveCrudRepository<User, Long> {
 
     /**
-     *  根据用户名查询用户
+     * 根据用户名查询用户
+     *
      * @param username 用户名
      * @return Mono<User>
      */
-    @Query("SELECT * FROM user WHERE user_name = :username")
+    @Query("SELECT * FROM user WHERE username = :username")
     Mono<User> findByUsername(String username);
 
 }

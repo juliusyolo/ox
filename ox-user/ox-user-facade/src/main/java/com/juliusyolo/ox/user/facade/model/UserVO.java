@@ -16,6 +16,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserVO {
-    private String userName;
-    private String nickName;
+    private String username;
+    private String nickname;
 }

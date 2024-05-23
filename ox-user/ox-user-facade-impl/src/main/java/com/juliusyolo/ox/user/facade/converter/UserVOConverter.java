@@ -22,7 +22,7 @@ public interface UserVOConverter {
 
     UserVOConverter INSTANCE = Mappers.getMapper(UserVOConverter.class);
 
-    @Mapping(target = "nickName", source = "nickName")
-    @Mapping(target = "userName", source = "userName")
+    @Mapping(target = "nickname", source = "nickname")
+    @Mapping(target = "username", source = "username")
     UserVO convert(UserModel user);
 }
