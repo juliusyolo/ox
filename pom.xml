@@ -28,12 +28,14 @@
         <ox.module.version>0.0.1</ox.module.version>
         <ox.common.verison>0.0.2</ox.common.verison>
         <ox.app.version>0.0.1</ox.app.version>
-        <ox.user.dao.version>0.0.1</ox.user.dao.version>
+        <ox.user.repository.version>0.0.1</ox.user.repository.version>
         <ox.user.facade.version>0.0.1</ox.user.facade.version>
         <ox.user.service.version>0.0.1</ox.user.service.version>
         <ox.auth.dao.version>0.0.1</ox.auth.dao.version>
         <ox.auth.facade.version>0.0.1</ox.auth.facade.version>
         <ox.auth.service.version>0.0.1</ox.auth.service.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
     </properties>
 
     <dependencyManagement>
@@ -53,6 +55,11 @@
                 <artifactId>ox-auth-facade-impl</artifactId>
                 <version>${ox.auth.facade.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.asyncer</groupId>
+                <artifactId>r2dbc-mysql</artifactId>
+                <version>1.1.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -61,7 +68,46 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${mapstruct.version}</version>
+        </dependency>
     </dependencies>
 
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <annotationProcessorPaths>
+                        <!-- MapStruct 注解处理器 -->
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct.version}</version>
+                        </path>
+                        <!-- Lombok 注解处理器 -->
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                        <!-- MapStruct 和 Lombok 注解绑定处理器 -->
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok-mapstruct-binding</artifactId>
+                            <version>${lombok-mapstruct-binding.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

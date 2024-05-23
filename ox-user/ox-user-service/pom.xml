@@ -21,7 +21,7 @@
     <dependencies>
         <dependency>
             <groupId>com.juliusyolo</groupId>
-            <artifactId>ox-user-dao</artifactId>
+            <artifactId>ox-user-repository</artifactId>
         </dependency>
     </dependencies>
 </project>

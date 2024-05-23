@@ -55,7 +55,6 @@ const onSearch = (searchValue: string) => {
   .ox-header-left {
     display: flex;
     flex-direction: row;
-    width: 80%;
   }
 
   .ox-header-right {
@@ -63,7 +62,6 @@ const onSearch = (searchValue: string) => {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
   }
 }
 </style>

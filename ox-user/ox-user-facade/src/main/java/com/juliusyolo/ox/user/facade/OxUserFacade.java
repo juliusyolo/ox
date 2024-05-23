@@ -4,6 +4,7 @@ package com.juliusyolo.ox.user.facade;
 import com.juliusyolo.ox.common.model.OxResult;
 import com.juliusyolo.ox.user.facade.model.UserVO;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
@@ -18,7 +19,7 @@ import reactor.core.publisher.Mono;
 @RestController
 public interface OxUserFacade {
 
-    @GetMapping("/api/v1/users/hello")
-    Mono<OxResult<UserVO>> hello();
+    @GetMapping("/api/v1/user/{username}")
+    Mono<OxResult<UserVO>> getUserByUsername(@PathVariable("username") String username);
 
 }

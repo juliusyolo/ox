@@ -16,5 +16,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OxResult<T> {
+     public boolean success = true;
+
+     public String message;
+
      public T data;
+
+     public  static <T> OxResult<T> ok(T data){
+          return new OxResult<>(true,"ok",data);
+     }
 }

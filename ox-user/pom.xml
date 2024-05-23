@@ -19,7 +19,7 @@
     </properties>
 
     <modules>
-        <module>ox-user-dao</module>
+        <module>ox-user-repository</module>
         <module>ox-user-service</module>
         <module>ox-user-facade</module>
         <module>ox-user-facade-impl</module>
@@ -30,8 +30,8 @@
         <dependencies>
             <dependency>
                 <groupId>com.juliusyolo</groupId>
-                <artifactId>ox-user-dao</artifactId>
-                <version>${ox.user.dao.version}</version>
+                <artifactId>ox-user-repository</artifactId>
+                <version>${ox.user.repository.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.juliusyolo</groupId>
