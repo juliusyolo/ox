@@ -1,0 +1,10 @@
+com\juliusyolo\ox\community\service\PostService.class
+com\juliusyolo\ox\community\service\model\PostModel.class
+com\juliusyolo\ox\community\service\converter\CommentConverter.class
+com\juliusyolo\ox\community\service\enums\CommentStatusEnum.class
+com\juliusyolo\ox\community\service\CommentService.class
+com\juliusyolo\ox\community\service\impl\CommentServiceImpl.class
+com\juliusyolo\ox\community\service\impl\PostServiceImpl.class
+com\juliusyolo\ox\community\service\model\AggregatedCommentModel.class
+com\juliusyolo\ox\community\service\converter\CommentConverterImpl.class
+com\juliusyolo\ox\community\service\model\AggregatedPostModel.class

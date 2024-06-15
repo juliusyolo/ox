@@ -1,0 +1,3 @@
+com\juliusyolo\ox\user\facade\impl\OxUserFacadeImpl.class
+com\juliusyolo\ox\user\facade\converter\UserVOConverter.class
+com\juliusyolo\ox\user\facade\converter\UserVOConverterImpl.class

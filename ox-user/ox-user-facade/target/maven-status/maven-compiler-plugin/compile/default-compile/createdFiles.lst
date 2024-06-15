@@ -1,0 +1,5 @@
+com\juliusyolo\ox\user\facade\OxUserFacade.class
+com\juliusyolo\ox\user\facade\model\request\UserRegisterRequest.class
+com\juliusyolo\ox\user\facade\model\UserLoginVO.class
+com\juliusyolo\ox\user\facade\model\UserVO.class
+com\juliusyolo\ox\user\facade\model\request\UserLoginRequest.class

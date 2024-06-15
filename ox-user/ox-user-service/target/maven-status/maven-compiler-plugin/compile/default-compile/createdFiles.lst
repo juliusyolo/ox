@@ -1,0 +1,6 @@
+com\juliusyolo\ox\user\service\converter\UserConverter.class
+com\juliusyolo\ox\user\service\impl\UserServiceImpl.class
+com\juliusyolo\ox\user\service\model\UserModel.class
+com\juliusyolo\ox\user\service\converter\UserConverterImpl.class
+com\juliusyolo\ox\user\service\UserService.class
+com\juliusyolo\ox\user\service\UserStatusEnum.class

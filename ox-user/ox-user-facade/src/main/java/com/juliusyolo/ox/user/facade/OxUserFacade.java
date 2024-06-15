@@ -2,10 +2,11 @@ package com.juliusyolo.ox.user.facade;
 
 
 import com.juliusyolo.ox.common.model.OxResult;
+import com.juliusyolo.ox.user.facade.model.UserLoginVO;
 import com.juliusyolo.ox.user.facade.model.UserVO;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import com.juliusyolo.ox.user.facade.model.request.UserLoginRequest;
+import com.juliusyolo.ox.user.facade.model.request.UserRegisterRequest;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
 /**
@@ -21,5 +22,11 @@ public interface OxUserFacade {
 
     @GetMapping("/api/v1/user/{username}")
     Mono<OxResult<UserVO>> getUserByUsername(@PathVariable("username") String username);
+
+    @PostMapping("/api/v1/user/register")
+    Mono<OxResult<UserVO>> registerUser(@RequestBody UserRegisterRequest request);
+
+    @PostMapping("/api/v1/user/login")
+    Mono<OxResult<UserLoginVO>> login(@RequestBody UserLoginRequest request);
 
 }

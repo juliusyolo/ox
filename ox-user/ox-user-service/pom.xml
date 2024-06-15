@@ -23,5 +23,9 @@
             <groupId>com.juliusyolo</groupId>
             <artifactId>ox-user-repository</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.juliusyolo</groupId>
+            <artifactId>ox-common</artifactId>
+        </dependency>
     </dependencies>
 </project>

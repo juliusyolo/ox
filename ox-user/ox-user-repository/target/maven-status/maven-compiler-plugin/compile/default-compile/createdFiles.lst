@@ -1,0 +1,7 @@
+com\juliusyolo\ox\user\repository\model\Role.class
+com\juliusyolo\ox\user\repository\UserRepository.class
+com\juliusyolo\ox\user\repository\UserConfiguration.class
+com\juliusyolo\ox\user\repository\model\User.class
+com\juliusyolo\ox\user\repository\model\Resource.class
+com\juliusyolo\ox\user\repository\RoleRepository.class
+com\juliusyolo\ox\user\repository\ResourceRepository.class

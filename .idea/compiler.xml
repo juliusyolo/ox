@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/ox-auth/ox-auth-service/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ox-app" />
+        <module name="ox-community-repository" />
+        <module name="ox-user-facade-impl" />
+        <module name="ox-auth-facade" />
+        <module name="ox-user-service" />
+        <module name="ox-auth-service" />
+        <module name="ox-community-facade" />
+        <module name="ox-auth-dao" />
+        <module name="ox-community-facade-impl" />
+        <module name="ox-community-service" />
+        <module name="ox-user-facade" />
+        <module name="ox-auth-facade-impl" />
+        <module name="ox-user-repository" />
+        <module name="ox-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

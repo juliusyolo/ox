@@ -1,0 +1,9 @@
+com\juliusyolo\ox\community\repository\db\model\Post.class
+com\juliusyolo\ox\community\repository\es\model\AggregatedPost.class
+com\juliusyolo\ox\community\repository\CommunityConfiguration.class
+com\juliusyolo\ox\community\repository\es\CommentElasticsearchRepository.class
+com\juliusyolo\ox\community\repository\es\PostElasticsearchRepository.class
+com\juliusyolo\ox\community\repository\db\model\Comment.class
+com\juliusyolo\ox\community\repository\es\model\AggregatedComment.class
+com\juliusyolo\ox\community\repository\db\PostRepository.class
+com\juliusyolo\ox\community\repository\db\CommentRepository.class

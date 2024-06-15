@@ -20,6 +20,10 @@
             <artifactId>ox-user-facade-impl</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.juliusyolo</groupId>
+            <artifactId>ox-community-facade-impl</artifactId>
+        </dependency>
+        <dependency>
             <groupId>io.asyncer</groupId>
             <artifactId>r2dbc-mysql</artifactId>
         </dependency>

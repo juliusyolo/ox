@@ -25,4 +25,11 @@ public interface UserService {
      * @return 用户
      */
     Mono<UserModel> registerUser(UserModel userModel);
+
+    Mono<UserModel> getUserByUsernameOrEmail(UserModel userModel);
+
+    Mono<UserModel> login(UserModel userModel);
+
+    Mono<UserModel> getUserByUserId(Long userId);
+
 }

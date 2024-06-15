@@ -1,0 +1,4 @@
+com\juliusyolo\ox\community\facade\CommentFacade.class
+com\juliusyolo\ox\community\facade\model\CommentVO.class
+com\juliusyolo\ox\community\facade\model\CommentSaveRequest.class
+com\juliusyolo\ox\community\facade\PostFacade.class

@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.juliusyolo</groupId>
+        <artifactId>ox</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <artifactId>ox-community</artifactId>
+    <name>ox-community</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>ox-community-facade</module>
+        <module>ox-community-repository</module>
+        <module>ox-community-facade-impl</module>
+        <module>ox-community-service</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-community-repository</artifactId>
+                <version>${ox.community.repository.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-community-service</artifactId>
+                <version>${ox.community.service.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-community-facade</artifactId>
+                <version>${ox.community.facade.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-community-facade-impl</artifactId>
+                <version>${ox.community.facade.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.juliusyolo</groupId>
+                <artifactId>ox-common</artifactId>
+                <version>${ox.common.verison}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

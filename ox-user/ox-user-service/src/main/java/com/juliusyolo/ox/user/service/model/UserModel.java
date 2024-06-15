@@ -1,11 +1,13 @@
 package com.juliusyolo.ox.user.service.model;
 
-import java.time.LocalDateTime;
-import java.util.Date;
-
+import com.juliusyolo.ox.common.utils.OxUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
+
+import java.time.LocalDateTime;
+import java.util.Map;
 
 /**
  * <p>
@@ -22,6 +24,8 @@ public class UserModel {
 
     private Long id;
 
+    private Long userId;
+
     private String nickname;
 
     private String username;
@@ -32,9 +36,29 @@ public class UserModel {
 
     private String phoneNumber;
 
+    private String avatarUrl;
+
+    private String refreshToken;
+
+    private String accessToken;
+
     private LocalDateTime createTime;
 
     private LocalDateTime updateTime;
 
+    public String getAccessToken() {
+        if (StringUtils.isNotBlank(accessToken)) {
+            return accessToken;
+        }
+        return OxUtils.Jwt.generateSessionToken("access",
+                Map.of(  "username", username, "password", password));
+    }
 
+    public String getRefreshToken() {
+        if (StringUtils.isNotBlank(refreshToken)) {
+            return refreshToken;
+        }
+        return OxUtils.Jwt.generateSessionToken("refresh",
+                Map.of(  "username", username, "password", password));
+    }
 }

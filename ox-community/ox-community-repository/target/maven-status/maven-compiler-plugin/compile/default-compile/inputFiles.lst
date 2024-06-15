@@ -1,0 +1,9 @@
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\db\model\Comment.java
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\db\model\Post.java
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\es\model\AggregatedPost.java
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\es\PostElasticsearchRepository.java
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\es\model\AggregatedComment.java
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\es\CommentElasticsearchRepository.java
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\db\CommentRepository.java
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\db\PostRepository.java
+E:\Workspace\IdeaProjects\ox\ox-community\ox-community-repository\src\main\java\com\juliusyolo\ox\community\repository\CommunityConfiguration.java
